@@ -1,0 +1,145 @@
+/* ==========================================
+   SISTEMA DE DISEÑO RECOBRADO (:ROOT)
+   ========================================== */
+:root {
+    --color-principal: #111827;   /* Gris muy oscuro/Negro corporativo */
+    --color-secundario: #3b82f6;  /* Azul de acento para botones y enlaces */
+    --color-fondo: #f9fafb;       /* Blanco grisáceo para fondos */
+    --color-blanco: #ffffff;
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-base);
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.main-header {
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--color-secundario);
+}
+
+/* SECCIÓN HERO */
+.hero {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-main {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #2563eb;
+}
+
+/* CARACTERÍSTICAS (Grid Limpio) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 5%;
+}
+
+.feature-card {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.feature-card h3 {
+    color: var(--color-secundario);
+    margin-bottom: 0.5rem;
+}
+
+/* SECCIÓN PRODUCTOS */
+.products {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--color-secundario);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* PIE DE PÁGINA */
+.main-footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
